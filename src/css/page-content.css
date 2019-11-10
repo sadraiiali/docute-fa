@@ -56,7 +56,7 @@
   & table td {
     padding: 12px 10px;
     border-bottom: 1px solid var(--border-color);
-    text-align: left;
+    text-align: right;
   }
 
   & thead th {
@@ -69,7 +69,7 @@
     padding: 10px;
 
     &:first-child {
-      border-left: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
       border-radius: 4px 0px 0px 4px;
     }
 
@@ -102,6 +102,7 @@
 
   & pre,
   & .code-mask {
+    direction: ltr;
     overflow: auto;
     position: relative;
     margin: 0;
@@ -131,7 +132,7 @@
   & .code-mask {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     right: 0;
     z-index: 1;
     padding-top: 20px;
@@ -150,7 +151,7 @@
         display: block;
         width: 3px;
         top: 0;
-        left: 0;
+        right: 0;
         bottom: 0;
         background: var(--highlighted-line-border-color);
         position: absolute;
@@ -169,13 +170,13 @@
 
   & > ul,
   & > ol {
-    padding-left: 20px;
+    padding-right: 20px;
     margin: 1rem 0;
   }
 
   & .contains-task-list {
     list-style: none;
-    padding-left: 0;
+    padding-right: 0;
   }
 
   & img {
@@ -184,7 +185,7 @@
 
   & blockquote {
     background: #f1f1f1;
-    border-left: 8px solid #ccc;
+    border-right: 8px solid #ccc;
     margin: 20px 0;
     padding: 14px 16px;
     color: #6a737d;
@@ -207,9 +208,9 @@
   }
 
   & .header-anchor {
-    float: left;
+    float: right;
     line-height: 1;
-    margin-left: -20px;
+    margin-right: -20px;
     padding-right: 4px;
     opacity: 0;
     border-bottom: none;

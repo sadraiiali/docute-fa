@@ -37,7 +37,7 @@ const PatreonIcon = {
 
 new Docute({
   target: 'app',
-  title: 'Docute',
+  title: 'مستندات شبیه‌ساز دوبعدی فوتبال',
   highlight: ['typescript', 'bash', 'json', 'markdown'],
   plugins: [
     process.env.NODE_ENV === 'production' && googleAnalytics('UA-54857209-11')
@@ -95,17 +95,17 @@ new Docute({
   },
   nav: [
     {
-      title: 'Home',
+      title: 'صفحه‌اصلی',
       link: '/'
     },
     {
-      title: 'GitHub',
+      title: 'گیت‌هاب',
       link: 'https://github.com/egoist/docute'
     }
   ],
   sidebar: [
     {
-      title: 'Guide',
+      title: 'پایه',
       children: [
         {
           title: 'Introduction',
@@ -138,7 +138,7 @@ new Docute({
       ]
     },
     {
-      title: 'Advanced',
+      title: 'پیشرفته',
       children: [
         {
           title: 'Use With Bundlers',
@@ -151,7 +151,7 @@ new Docute({
       ]
     },
     {
-      title: 'References',
+      title: 'منابع',
       children: [
         {
           title: 'Options',
@@ -168,98 +168,98 @@ new Docute({
       ]
     },
     {
-      title: 'Credits',
+      title: 'پس گفتار',
       link: '/credits'
     }
   ],
-  overrides: {
-    '/': {
-      language: 'English'
-    },
-    '/zh/': {
-      language: 'Chinese',
-      editLinkText: '在 GitHub 上编辑此页',
-      nav: [
-        {
-          title: '首页',
-          link: '/zh/'
-        },
-        {
-          title: 'GitHub',
-          link: 'https://github.com/egoist/docute'
-        }
-      ],
-      sidebar: [
-        {
-          title: '指南',
-          children: [
-            {
-              title: '介绍',
-              link: '/zh'
-            },
-            {
-              title: '自定义',
-              link: '/zh/guide/customization'
-            },
-            {
-              title: 'Markdown 功能',
-              link: '/zh/guide/markdown-features'
-            },
-            {
-              title: '在 Markdown 中使用 Vue',
-              link: '/zh/guide/use-vue-in-markdown'
-            },
-            {
-              title: '国际化',
-              link: '/zh/guide/internationalization'
-            },
-            {
-              title: '插件',
-              link: '/zh/guide/plugin'
-            },
-            {
-              title: '部署',
-              link: '/zh/guide/deployment'
-            }
-          ]
-        },
-        {
-          title: '进阶',
-          children: [
-            {
-              title: '使用打包工具',
-              link: '/zh/guide/use-with-bundlers'
-            },
-            {
-              title: '离线支持',
-              link: '/zh/guide/offline-support'
-            }
-          ]
-        },
-        {
-          title: '参考',
-          children: [
-            {
-              title: '配置项',
-              link: '/zh/options'
-            },
-            {
-              title: '内置组件',
-              link: '/zh/builtin-components'
-            },
-            {
-              title: '插件 API',
-              link: '/zh/plugin-api'
-            }
-          ]
-        },
-        {
-          title: '致谢',
-          link: '/zh/credits'
-        }
-      ]
-    }
-  },
+  // overrides: {
+  //   '/': {
+  //     language: 'English'
+  //   },
+  //   '/zh/': {
+  //     language: 'Chinese',
+  //     editLinkText: '在 GitHub 上编辑此页',
+  //     nav: [
+  //       {
+  //         title: '首页',
+  //         link: '/zh/'
+  //       },
+  //       {
+  //         title: 'GitHub',
+  //         link: 'https://github.com/egoist/docute'
+  //       }
+  //     ],
+  //     sidebar: [
+  //       {
+  //         title: '指南',
+  //         children: [
+  //           {
+  //             title: '介绍',
+  //             link: '/zh'
+  //           },
+  //           {
+  //             title: '自定义',
+  //             link: '/zh/guide/customization'
+  //           },
+  //           {
+  //             title: 'Markdown 功能',
+  //             link: '/zh/guide/markdown-features'
+  //           },
+  //           {
+  //             title: '在 Markdown 中使用 Vue',
+  //             link: '/zh/guide/use-vue-in-markdown'
+  //           },
+  //           {
+  //             title: '国际化',
+  //             link: '/zh/guide/internationalization'
+  //           },
+  //           {
+  //             title: '插件',
+  //             link: '/zh/guide/plugin'
+  //           },
+  //           {
+  //             title: '部署',
+  //             link: '/zh/guide/deployment'
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         title: '进阶',
+  //         children: [
+  //           {
+  //             title: '使用打包工具',
+  //             link: '/zh/guide/use-with-bundlers'
+  //           },
+  //           {
+  //             title: '离线支持',
+  //             link: '/zh/guide/offline-support'
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         title: '参考',
+  //         children: [
+  //           {
+  //             title: '配置项',
+  //             link: '/zh/options'
+  //           },
+  //           {
+  //             title: '内置组件',
+  //             link: '/zh/builtin-components'
+  //           },
+  //           {
+  //             title: '插件 API',
+  //             link: '/zh/plugin-api'
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         title: '致谢',
+  //         link: '/zh/credits'
+  //       }
+  //     ]
+  //   }
+  // },
   footer: `
   <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
   &copy; ${new Date().getFullYear()} Developed by <a href="https://egoist.sh" target="_blank">EGOIST</a>. Released under MIT license.
@@ -269,11 +269,10 @@ new Docute({
     template: html`
       <div class="docute-banner">
         <note :label="false"
-          ><PatreonIcon width="16" height="16" style="position:relative;top:2px;margin-right:8px;" />Support Docute development by
+          ><PatreonIcon width="16" height="16" style="position:relative;top:2px;margin-right:8px;" />ما را حمایت کنید
           <a href="https://patreon.com/egoist" target="_blank"
-            >becoming a patron or one-time donation <ExternalLinkIcon /></a
-          >.</note
-        >
+            >از این طریق <ExternalLinkIcon /></a
+          >.</note>
       </div>
     `,
     components: {

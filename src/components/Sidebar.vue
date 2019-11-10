@@ -100,8 +100,8 @@ export default {
   }
 
   @media (max-width: 768px) {
-    left: 0;
-    transform: translateX(-100%);
+    right: 0;
+    transform: translateX(100%);
     width: 80%;
     transition: transform 0.5s cubic-bezier(0.5, 0.32, 0.01, 1);
     padding: 30px 0;

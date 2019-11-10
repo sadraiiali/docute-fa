@@ -2,17 +2,19 @@
   <header class="Header">
     <div class="Wrap">
       <div class="header-inner">
-        <div class="header-left">
+        <div class="header-right">
           <h1 class="site-title">
             <SidebarToggle />
-            <router-link to="/"> <component :is="Logo" /> </router-link>
+            <router-link to="/">
+              <component :is="Logo" />
+            </router-link>
           </h1>
           <HeaderNav v-if="leftNav" :nav="leftNav" />
         </div>
-        <div class="header-right">
-          <InjectedComponents position="header-right:start" />
+        <div class="header-left">
+          <InjectedComponents position="header-left:start" />
           <HeaderNav v-if="rightNav" :nav="rightNav" />
-          <InjectedComponents position="header-right:end" />
+          <InjectedComponents position="header-left:end" />
         </div>
       </div>
     </div>
@@ -94,11 +96,11 @@ export default {
 
 .site-title {
   font-weight: normal;
-  margin: 0 25px 0 0;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  margin: 0 0 0 25px;
 
   & a {
     color: inherit;
@@ -120,13 +122,11 @@ export default {
 
 .header-left {
   display: flex;
+  margin-right: auto;
 }
 
 .header-right {
   display: flex;
-  position: absolute;
-  right: 20px;
-  top: 0;
   height: 100%;
   background: var(--header-background);
 

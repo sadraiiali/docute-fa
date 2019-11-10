@@ -21,6 +21,7 @@
           />
         </svg>
       </span>
+
       <span>{{ item.title }}</span>
     </div>
     <uni-link
@@ -155,7 +156,7 @@ export default {
     height: 4px;
     border-radius: 50%;
     background-color: var(--sidebar-link-arrow-color);
-    margin-right: 8px;
+    margin-left: 8px;
   }
 
   &.active {
@@ -169,7 +170,7 @@ export default {
 }
 
 .ItemChildren {
-  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   margin: 0 20px;
 }
 
@@ -180,7 +181,7 @@ export default {
 }
 
 .ItemChildLink {
-  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   position: relative;
   line-height: 1;
@@ -199,9 +200,10 @@ a {
   width: 16px;
   display: inline-block;
   color: var(--sidebar-link-arrow-color);
-
+  /*text-align: left;*/
   & svg {
     transition: all 0.15s ease;
+    transform: rotate(180deg);
   }
 
   &.open {

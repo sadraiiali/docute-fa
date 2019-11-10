@@ -3,8 +3,8 @@
     <div class="header-nav-item" v-for="(item, index) in nav" :key="index">
       <div class="dropdown-wrapper" v-if="item.children">
         <span class="dropdown-trigger">
-          {{ item.title }}
           <span class="arrow"></span>
+          {{ item.title }}
         </span>
         <ul class="dropdown-list" v-if="item.children">
           <li
@@ -16,8 +16,8 @@
               :to="childItem.link"
               :openInNewTab="childItem.openInNewTab"
               :externalLinkIcon="false"
-              >{{ childItem.title }}</uni-link
-            >
+              >{{ childItem.title }}
+            </uni-link>
           </li>
         </ul>
       </div>
@@ -27,8 +27,10 @@
         :to="item.link"
         :openInNewTab="item.openInNewTab"
         :externalLinkIcon="false"
-        >{{ item.title }}</uni-link
+        style="margin : 0 10px"
       >
+        {{ item.title }}
+      </uni-link>
     </div>
   </div>
 </template>
@@ -73,8 +75,8 @@ export default {
 .header-nav-item {
   height: 100%;
 
-  &:not(:first-child) {
-    margin-left: 25px;
+  & :not(:first-child) {
+    margin-right: 25px;
   }
 
   & > /deep/ a {
@@ -84,7 +86,7 @@ export default {
     height: 100%;
     position: relative;
 
-    &:after {
+    & :after {
       content: '';
       height: 2px;
       width: 100%;
@@ -95,9 +97,10 @@ export default {
       display: block;
     }
 
-    &.router-link-exact-active {
+    & .router-link-exact-active {
       color: var(--accent-color);
-      &:after {
+
+      & :after {
         background-color: var(--nav-link-border-color);
       }
     }
@@ -112,7 +115,7 @@ export default {
   border-bottom: 1px solid var(--border-color);
 
   & .header-nav-item {
-    &:not(:first-child) {
+    & :not(:first-child) {
       margin-left: 0;
     }
   }
@@ -126,25 +129,25 @@ export default {
   display: inline-block;
   vertical-align: middle;
   margin-top: -1px;
-  margin-left: 6px;
-  margin-right: -14px;
+  margin-right: 6px;
+  margin-left: -14px;
   width: 0;
   height: 0;
-  border-left: 4px solid transparent;
   border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
   border-top: 5px solid #ccc;
 }
 
 .dropdown-wrapper {
   position: relative;
 
-  &:hover .dropdown-list {
+  & :hover .dropdown-list {
     display: block;
   }
 }
 
 .dropdown-trigger {
-  &:hover {
+  & :hover {
     cursor: default;
   }
 }
@@ -154,11 +157,11 @@ export default {
   list-style: none;
   margin: 0;
   padding: 5px 0;
-  padding-left: 0;
+  padding-right: 0;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 100%;
   background: var(--header-background);
 
@@ -176,19 +179,19 @@ export default {
     display: block;
     position: relative;
 
-    &.router-link-exact-active {
+    & .router-link-exact-active {
       color: var(--accent-color);
 
-      &:before {
+      & :before {
         content: '';
         width: 0;
         height: 0;
-        border-left: 5px solid #3eaf7c;
+        border-right: 5px solid #3eaf7c;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
         position: absolute;
         top: calc(50% - 2px);
-        left: 9px;
+        right: 9px;
       }
     }
   }

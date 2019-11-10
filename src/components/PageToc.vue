@@ -33,8 +33,8 @@ export default {
 
 <style scoped>
 .PageToc {
-  border-left: 1px solid var(--border-color);
-  margin-left: 16px;
+  border-right: 1px solid var(--border-color);
+  margin-right: 16px;
   margin-top: 10px;
 }
 
@@ -48,7 +48,7 @@ export default {
   }
 
   &[data-level='2'] {
-    margin-left: 16px;
+    margin-right: 16px;
   }
 
   &.router-link-exact-active {
