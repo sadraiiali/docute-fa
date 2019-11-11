@@ -148,7 +148,6 @@ export default {
   margin: 0 20px;
   display: flex;
   align-items: center;
-
   &:before {
     content: '';
     display: block;

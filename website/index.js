@@ -71,64 +71,20 @@ new Docute({
       title: 'پایه‌ای',
       children: [
         {
-          title: 'Introduction',
+          title: 'شبیه‌ساز دوبعدی فوتبال ؟',
           link: '/'
-        },
-        {
-          title: 'Customization',
-          link: '/guide/customization'
-        },
-        {
-          title: 'Markdown Features',
-          link: '/guide/markdown-features'
-        },
-        {
-          title: 'Use Vue in Markdown',
-          link: '/guide/use-vue-in-markdown'
-        },
-        {
-          title: 'Internationalization',
-          link: '/guide/internationalization'
-        },
-        {
-          title: 'Plugin',
-          link: '/guide/plugin'
-        },
-        {
-          title: 'Deployment',
-          link: '/guide/deployment'
         }
       ]
     },
     {
       title: 'پیشرفته',
       children: [
-        {
-          title: 'Use With Bundlers',
-          link: '/guide/use-with-bundlers'
-        },
-        {
-          title: 'Offline Support',
-          link: '/guide/offline-support'
-        }
+
       ]
     },
     {
       title: 'منابع',
-      children: [
-        {
-          title: 'Options',
-          link: '/options'
-        },
-        {
-          title: 'Built-in Components',
-          link: '/builtin-components'
-        },
-        {
-          title: 'Plugin API',
-          link: '/plugin-api'
-        }
-      ]
+      link: '/resources'
     },
     {
       title: 'پس گفتار',

@@ -6,7 +6,7 @@ module.exports = {
   output: {
     dir: 'website/dist',
     html: {
-      title: 'Docute'
+      title: 'مستندات شبیه‌ساز دوبعدی فوتبال'
     }
   },
   publicFolder: path.join(__dirname, '../website/docs'),

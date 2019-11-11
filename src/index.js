@@ -13,8 +13,8 @@ import Note from './components/Note.vue'
 import Gist from './components/Gist.vue'
 import Loading from './components/Loading.vue'
 import ExternalLinkIcon from './components/icons/ExternalLinkIcon.vue'
+import AvatarMini from './components/AvatarMini.vue'
 import {INITIAL_STATE_NAME} from './utils/constants'
-
 // Built-in plugins
 import i18nPlugin from './plugins/i18n'
 import evaluateContentPlugin from './plugins/evaluateContent'
@@ -30,6 +30,7 @@ Vue.component(Note.name, Note)
 Vue.component(ExternalLinkIcon.name, ExternalLinkIcon)
 Vue.component(Gist.name, Gist)
 Vue.component(Loading.name, Loading)
+Vue.component(AvatarMini.name, AvatarMini)
 Vue.use(alternativeComponents)
 
 Vue.mixin({
