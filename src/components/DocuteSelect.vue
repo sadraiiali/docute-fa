@@ -1,8 +1,5 @@
 <template>
   <div class="DocuteSelect">
-    <select class="select" @change="handleChange" :value="value">
-      <slot v-bind="{value: value}"></slot>
-    </select>
     <div class="arrow">
       <svg
         width="13"
@@ -16,6 +13,9 @@
         <path d="M1.367.375l5.185 5.303M11.685.375L6.5 5.678"></path>
       </svg>
     </div>
+    <select class="select" @change="handleChange" :value="value">
+      <slot v-bind="{value: value}"></slot>
+    </select>
   </div>
 </template>
 
@@ -73,8 +73,8 @@ export default {
   background-image: none;
   line-height: var(--docute-select-height);
   font-size: 14px;
-  margin-right: -20px;
-  padding: 0 76px 0 16px;
+  margin-left: -20px;
+  padding: 0 16px 0 76px;
   text-transform: none;
   width: 100%;
   outline: none;
@@ -83,11 +83,11 @@ export default {
 
 .arrow {
   color: var(--text-color);
-  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   width: 40px;
   height: 100%;
   position: absolute;
-  right: 0;
+  left: 0;
   pointer-events: none;
   display: flex;
   align-items: center;

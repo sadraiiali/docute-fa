@@ -200,7 +200,6 @@ export default {
 
 .Content {
   padding: 0 20px 0 80px;
-
   @media screen and (max-width: 768px) {
     padding: 0 20px;
   }

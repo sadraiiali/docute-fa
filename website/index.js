@@ -1,49 +1,18 @@
 import html from 'html-template-tag'
-import googleAnalytics from 'docute-google-analytics'
 import Docute from '../src'
 import prismLanguages from '../src/utils/prismLanguages'
 import ColorBox from './components/ColorBox.vue'
 
-const PatreonIcon = {
-  template: html`
-    <svg
-      width="569px"
-      height="546px"
-      viewBox="0 0 569 546"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <title>Patreon logo</title>
-      <g>
-        <circle
-          fill="rgb(249, 104, 84)"
-          id="Oval"
-          cx="362.589996"
-          cy="204.589996"
-          r="204.589996"
-        ></circle>
-        <rect
-          fill="rgb(5, 45, 73)"
-          id="Rectangle"
-          x="0"
-          y="0"
-          width="100"
-          height="545.799988"
-        ></rect>
-      </g>
-    </svg>
-  `
-}
 
 new Docute({
   target: 'app',
   title: 'مستندات شبیه‌ساز دوبعدی فوتبال',
-  highlight: ['typescript', 'bash', 'json', 'markdown'],
+  highlight: [ 'c', 'cpp', 'bash', 'json', 'markdown'],
   plugins: [
-    process.env.NODE_ENV === 'production' && googleAnalytics('UA-54857209-11')
+    process.env.NODE_ENV === 'production'
   ].filter(Boolean),
   editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
-  editLinkText: 'Edit this page on GitHub',
+  editLinkText: 'این صفحه را در گیتهاب ویرایش کنید.',
   router: {
     mode: 'history'
   },
@@ -68,13 +37,7 @@ new Docute({
             const style = document.createElement('style')
             style.id = ID
             style.textContent = `
-            /* Import desired font from Google fonts */
-            @import url('https://fonts.googleapis.com/css?family=Lato');
-
-            /* Apply the font to body (to override the default one) */
-            body {
-              font-family: Lato, sans-serif;
-            }
+            
             `
             document.head.appendChild(style)
           }
@@ -86,26 +49,26 @@ new Docute({
     }
   ],
   versions: {
-    'v4 (Latest)': {
+    'Agent2D': {
       link: '/'
     },
-    v3: {
+    'Librcsc': {
       link: 'https://v3.docute.org'
     }
   },
   nav: [
     {
-      title: 'صفحه‌اصلی',
+      title: 'مستندات',
       link: '/'
     },
     {
-      title: 'گیت‌هاب',
+      title: 'نوشته‌ها',
       link: 'https://github.com/egoist/docute'
     }
   ],
   sidebar: [
     {
-      title: 'پایه',
+      title: 'پایه‌ای',
       children: [
         {
           title: 'Introduction',
@@ -172,112 +135,30 @@ new Docute({
       link: '/credits'
     }
   ],
-  // overrides: {
-  //   '/': {
-  //     language: 'English'
-  //   },
-  //   '/zh/': {
-  //     language: 'Chinese',
-  //     editLinkText: '在 GitHub 上编辑此页',
-  //     nav: [
-  //       {
-  //         title: '首页',
-  //         link: '/zh/'
-  //       },
-  //       {
-  //         title: 'GitHub',
-  //         link: 'https://github.com/egoist/docute'
-  //       }
-  //     ],
-  //     sidebar: [
-  //       {
-  //         title: '指南',
-  //         children: [
-  //           {
-  //             title: '介绍',
-  //             link: '/zh'
-  //           },
-  //           {
-  //             title: '自定义',
-  //             link: '/zh/guide/customization'
-  //           },
-  //           {
-  //             title: 'Markdown 功能',
-  //             link: '/zh/guide/markdown-features'
-  //           },
-  //           {
-  //             title: '在 Markdown 中使用 Vue',
-  //             link: '/zh/guide/use-vue-in-markdown'
-  //           },
-  //           {
-  //             title: '国际化',
-  //             link: '/zh/guide/internationalization'
-  //           },
-  //           {
-  //             title: '插件',
-  //             link: '/zh/guide/plugin'
-  //           },
-  //           {
-  //             title: '部署',
-  //             link: '/zh/guide/deployment'
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         title: '进阶',
-  //         children: [
-  //           {
-  //             title: '使用打包工具',
-  //             link: '/zh/guide/use-with-bundlers'
-  //           },
-  //           {
-  //             title: '离线支持',
-  //             link: '/zh/guide/offline-support'
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         title: '参考',
-  //         children: [
-  //           {
-  //             title: '配置项',
-  //             link: '/zh/options'
-  //           },
-  //           {
-  //             title: '内置组件',
-  //             link: '/zh/builtin-components'
-  //           },
-  //           {
-  //             title: '插件 API',
-  //             link: '/zh/plugin-api'
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         title: '致谢',
-  //         link: '/zh/credits'
-  //       }
-  //     ]
-  //   }
-  // },
   footer: `
   <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
-  &copy; ${new Date().getFullYear()} Developed by <a href="https://egoist.sh" target="_blank">EGOIST</a>. Released under MIT license.
-  </div>
+  &copy; ${new Date().getFullYear()}.
+   ساخته شده با ❤️ در 
+   <a href="https://kn2c.ir" target="_blank">
+   KN2C Robotics Lab.</a>
+    
+    برگرفته از 
+    <a href="https://docute.org/">DOCUTE</a>
+     </div>
   `,
   banner: {
     template: html`
       <div class="docute-banner">
-        <note :label="false"
-          ><PatreonIcon width="16" height="16" style="position:relative;top:2px;margin-right:8px;" />ما را حمایت کنید
-          <a href="https://patreon.com/egoist" target="_blank"
-            >از این طریق <ExternalLinkIcon /></a
-          >.</note>
+        <note :label="false">
+          ما را حمایت کنید
+          <a href="" target="_blank">
+            از این طریق
+             <ExternalLinkIcon />
+            </a>.
+          </note>
       </div>
     `,
-    components: {
-      PatreonIcon
-    }
+    components: {}
   }
 })
 

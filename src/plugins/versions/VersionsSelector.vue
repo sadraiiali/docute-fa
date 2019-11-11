@@ -5,7 +5,7 @@
       :value="currentVersionLink"
       v-slot="{value}"
     >
-      <option disabled>Choose Version</option>
+      <option disabled>انتخاب کنید :</option>
       <option
         v-for="(version, key) in $store.getters.config.versions"
         :key="key"

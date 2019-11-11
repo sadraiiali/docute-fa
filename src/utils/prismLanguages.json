@@ -9,7 +9,7 @@
   "bison": "c",
   "c": "clike",
   "csharp": "clike",
-  "cpp": "c",
+  "cpp": "cpp",
   "coffeescript": "javascript",
   "crystal": "ruby",
   "css-extras": "css",

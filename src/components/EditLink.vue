@@ -49,6 +49,6 @@ export default {
 .icon {
   width: 18px;
   height: 18px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 </style>
