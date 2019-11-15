@@ -1,5 +1,5 @@
 
-# Docute
+# فارسی | Docute
 
 [![npm version](https://badgen.net/npm/v/docute)](https://npm.im/docute) [![jsdelivr downloads](https://data.jsdelivr.com/v1/package/npm/docute/badge?style=rounded)](https://www.jsdelivr.com/package/npm/docute) [![circleci](https://badgen.net/circleci/github/egoist/docute/master)](https://circleci.com/gh/egoist/docute/tree/master)  [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://patreon.com/egoist)
 
