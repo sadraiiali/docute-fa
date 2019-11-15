@@ -1,4 +1,5 @@
 <div dir="rtl">
+  
 # فارسی | Docute
 
 مستندسازی به راحتی هر چه تمام تر!
@@ -37,6 +38,7 @@
 دو راه کار وجود دارد:
 
 1- دست به کار شوید و آن‌ها را درست کنید!
+
 2- از طریق گیتهاب ایشیو بزنید یا با این ایمیل با من در تماس باشید :‌ sadraiiali@gmail.com 
 
 ## منابع
@@ -59,10 +61,16 @@
 
 -----
 
+</div>
+
+<div dir="ltr">
+
+
 ## Author
 
 **Docute** © [EGOIST](https://github.com/egoist), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by EGOIST with help from contributors ([list](https://github.com/egoist/docute/contributors)).
 
 > [Website](https://egoist.sh) · GitHub [@EGOIST](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
+
 </div>
