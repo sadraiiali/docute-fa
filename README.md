@@ -1,4 +1,4 @@
-
+<div dir="rtl">
 # فارسی | Docute
 
 مستندسازی به راحتی هر چه تمام تر!
@@ -65,3 +65,4 @@
 Authored and maintained by EGOIST with help from contributors ([list](https://github.com/egoist/docute/contributors)).
 
 > [Website](https://egoist.sh) · GitHub [@EGOIST](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
+</div>
