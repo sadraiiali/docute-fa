@@ -1,6 +1,6 @@
 {
-  "name": "docute",
-  "version": "4.11.0",
+  "name": "docute-fa",
+  "version": "0.1.0",
   "scripts": {
     "build:umd": "poi --config build/poi.lib.config.js --prod",
     "build:es": "vue-compile src --config build/vue-compile.config.js",
