@@ -1,34 +1,63 @@
 
 # فارسی | Docute
 
-[![npm version](https://badgen.net/npm/v/docute)](https://npm.im/docute) [![jsdelivr downloads](https://data.jsdelivr.com/v1/package/npm/docute/badge?style=rounded)](https://www.jsdelivr.com/package/npm/docute) [![circleci](https://badgen.net/circleci/github/egoist/docute/master)](https://circleci.com/gh/egoist/docute/tree/master)  [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://patreon.com/egoist)
+مستندسازی به راحتی هر چه تمام تر!
 
-Effortless documentation, done right.
+## از کجا اومده ؟
 
-## Features
+این پروژه یک انشعاب(فورک) از ابزار داکیوت است 
+که اولین بار در [آزمایشگاه KN2C](http://kn2c.ir) برای ساخت 
+[مستندات لیگ شبیه‌سازی دوبعدی فوتبال](http://rcss.ir) استفاده شد.
+ این برنامه همچنان به صورت آزاد منتشر شده است
+ و استفاده آن در پروژه‌های شما نه تنها بد نیست بلکه بسیار پسندیده است.
 
-- No build process, website is generated on the fly.
-- A simple yet elegant UI that is dedicated to documentation.
-- Leveraging the power of Markdown and Vue.
-- Extensible plugin system, plenty of official and community plugins.
+## ویژگی‌ها
 
-## Documentation
+- بدون نیاز به بیلد، مستنداتتان به سرعت ایجاد میشوند. 
+- طراحی ساده و قدرتمند ساخته شده برای مستند سازی.
+- با قابلیت استفاده از قدرت VUE و Markdown.
+- دارای سیستم افزونه‌پذیر به همراه تعداد زیادی افزونه‌های رسمی
+
+## مستندات این پروژه 
+
+متاسفانه هنوز مستنداتی به زبان فارسی برای این پروژه تهیه نشده است
+ولی شما همچنان میتوانید از مستندات اصلی پروژه استفاده کنید.
+تمام موارد آورده شده در مستندات پروژه، در نسخه فارسی آن نیز کار میکنند به جز موارد آورده شده در پایین تر!
+همچنین مواردی نیز این پروژه بیشتر از پروژه اصلی دارد.
+
 
 - **v4 (latest) docs**: https://docute.org
-- v3 (legacy) docs: https://v3.docute.org
 
-## Resources
+## چه چیز‌هایی کار نمیکنند ؟ 
 
-- [Official Plugins](https://github.com/egoist/docute-plugins)
+- هایلایت خطوط کد
+
+
+اگر در زمان استفاده از پروژه به موردی برخوردید که برای شما کار نکرد
+دو راه کار وجود دارد:
+
+1- دست به کار شوید و آن‌ها را درست کنید!
+2- از طریق گیتهاب ایشیو بزنید یا با این ایمیل با من در تماس باشید :‌ sadraiiali@gmail.com 
+
+## منابع
+
+- [پلاگین‌های رسمی](https://github.com/egoist/docute-plugins)
 - [Awesome Docute](https://github.com/egoist/awesome-docute)
 
-## Contributing
+## نحوه‌ی مشارکت 
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1. پروژه را انشعاب (fork) کنید.
+2. شاخه تغییرات خودتان را ایجاد کنید : `git checkout -b my-new-feature`
+3. تغییراتتان را Commit کنید : `git commit -am 'Add some feature'`
+4. تغییراتتان را Push کنید : `git push origin my-new-feature`
+5.  در نهایت یک Pull Request بسازید. :D
+
+
+-----
+
+اگر علاقمند به توسعه پروژه‌های متن‌باز عام المنفعه هستید حتما [فسفر](https://gitlab.com/foss4) را دنبال کنید.
+
+-----
 
 ## Author
 
