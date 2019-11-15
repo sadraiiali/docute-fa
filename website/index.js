@@ -3,14 +3,47 @@ import Docute from '../src'
 import prismLanguages from '../src/utils/prismLanguages'
 import ColorBox from './components/ColorBox.vue'
 
+// Custom Font
+const style = document.createElement('style')
+style.textContent = `
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.ttf') format('truetype');
+                    font-weight: normal;
+                  }
+                  
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.ttf') format('truetype');
+                    font-weight: bold;
+                  }
+                  
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.ttf') format('truetype');
+                    font-weight: 900;
+                  }
+                  body{
+                         font: 16px/1.7 Sahel,-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif!important;
+                  }
+            `
+document.head.appendChild(style)
+//
 
 new Docute({
   target: 'app',
   title: 'مستندات شبیه‌ساز دوبعدی فوتبال',
-  highlight: [ 'c', 'cpp', 'bash', 'json', 'markdown'],
-  plugins: [
-    process.env.NODE_ENV === 'production'
-  ].filter(Boolean),
+  highlight: ['c', 'cpp', 'bash', 'json', 'markdown'],
+  plugins: [process.env.NODE_ENV === 'production'].filter(Boolean),
   editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
   editLinkText: 'این صفحه را در گیتهاب ویرایش کنید.',
   router: {
@@ -37,7 +70,35 @@ new Docute({
             const style = document.createElement('style')
             style.id = ID
             style.textContent = `
-            
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.ttf') format('truetype');
+                    font-weight: normal;
+                  }
+                  
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.ttf') format('truetype');
+                    font-weight: bold;
+                  }
+                  
+                  @font-face {
+                    font-family: Sahel;
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot');
+                    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot?#iefix') format('embedded-opentype'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.woff') format('woff'),
+                         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.ttf') format('truetype');
+                    font-weight: 900;
+                  }
+                  body{
+                         font: 16px/1.7 Sahel,-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif!important;
+                  }
             `
             document.head.appendChild(style)
           }
@@ -49,10 +110,10 @@ new Docute({
     }
   ],
   versions: {
-    'Agent2D': {
+    Agent2D: {
       link: '/'
     },
-    'Librcsc': {
+    Librcsc: {
       link: 'https://v3.docute.org'
     }
   },
@@ -78,9 +139,7 @@ new Docute({
     },
     {
       title: 'پیشرفته',
-      children: [
-
-      ]
+      children: []
     },
     {
       title: 'منابع',
@@ -109,9 +168,10 @@ new Docute({
           ما را حمایت کنید
           <a href="" target="_blank">
             از این طریق
-             <ExternalLinkIcon />
-            </a>.
-          </note>
+            <ExternalLinkIcon /> </a
+          >.
+        </note>
+
       </div>
     `,
     components: {}
@@ -129,12 +189,8 @@ Vue.component('ReverseText', {
     <div class="reverse-text">
       {{ reversedText }}
       <v-style>
-      .reverse-text {
-        border: 1px solid var(--border-color);
-        padding: 20px;
-        font-weight: bold;
-        border-radius: 4px;
-      }
+        .reverse-text { border: 1px solid var(--border-color); padding: 20px;
+        font-weight: bold; border-radius: 4px; }
       </v-style>
     </div>
   `,
