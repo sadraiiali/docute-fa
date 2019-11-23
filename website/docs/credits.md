@@ -5,6 +5,8 @@
 بپاس قدردانی از تلاش‌های دوستان، نامشان به ترتیب حروف البفا در زیر آورده شده است:
 
 <div style="display: flex;flex-direction: row;justify-content: center;flex-wrap: wrap">  
+    <image-zoom url="https://rcss.ir/2D/FA/img/doc/intro/2d-overview-field.jpg"
+    ></image-zoom>
     <AvatarMini 
             img="https://avatars2.githubusercontent.com/u/23504332?s=460&v=4" 
             firstName="علیرضا"

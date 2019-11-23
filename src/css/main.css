@@ -30,6 +30,7 @@ a {
 
 .medium-zoom-overlay, .medium-zoom-image--opened {
   z-index: 99;
+  background-color: var(--page-background) !important;
 }
 
 .Wrap {
