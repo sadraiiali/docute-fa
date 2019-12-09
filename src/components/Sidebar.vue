@@ -25,17 +25,36 @@
 </template>
 
 <script>
-import HeaderNav from './HeaderNav.vue'
-import SidebarItem from './SidebarItem.vue'
+  import HeaderNav from './HeaderNav.vue'
+  import SidebarItem from './SidebarItem.vue'
 
-export default {
+  export default {
   components: {
     HeaderNav,
     SidebarItem
   },
   data() {
     return {
-      closedItems: []
+      closedItems: [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
     }
   },
   watch: {
@@ -47,10 +66,17 @@ export default {
         )
         this.openItem(index)
       },
-      immediate: true
+      immediate: false
     }
   },
   methods: {
+    closeAll() {
+      for (const i in this.$store.getters.sidebar) {
+        this.closedItems.push(i)
+        console.log(this.closedItems)
+        console.log(i)
+      }
+    },
     openItem(index) {
       if (this.closedItems.indexOf(index) > -1) {
         this.closedItems = this.closedItems.filter(v => v !== index)
