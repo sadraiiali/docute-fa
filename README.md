@@ -1,6 +1,8 @@
 <div dir="rtl">
   
 # فارسی | Docute
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsadraiiali%2Fdocute-fa.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsadraiiali%2Fdocute-fa?ref=badge_shield)
+
 
 مستندسازی به راحتی هر چه تمام تر!
 
@@ -74,3 +76,7 @@ Authored and maintained by EGOIST with help from contributors ([list](https://gi
 > [Website](https://egoist.sh) · GitHub [@EGOIST](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
 
 </div>
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsadraiiali%2Fdocute-fa.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsadraiiali%2Fdocute-fa?ref=badge_large)
