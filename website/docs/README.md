@@ -9,3 +9,7 @@ void golan(){
 }
 
 ```
+
+<note type="tip" label="">
+یه چیزی
+</note>

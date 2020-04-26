@@ -117,7 +117,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh');
+@import url('https://unpkg.com/socicon@3.0.5/css/socicon.css');
 
 .box {
   margin: 10px;
