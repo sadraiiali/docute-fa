@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <script>
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>کارگاه کامپیوتر دانشکده ی مهندسی کامپیوتر دانشگاه صنعتی شریف </title>
+    <link href="https://unpkg.com/docute-fa@0.1.7/dist/docute.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute-fa@0.1.7/dist/docute.js"></script>
+    <script>
+        new Docute({
+            target: '#docute',
+            title: '🎓 کارگاه کامپیوتر دانشکده ی مهندسی کامپیوتر ',
+            highlight: ['cpp', 'bash', 'c', 'markdown', 'python'],
+            router: {
+                mode: 'history'
+            },
+            detectSystemDarkTheme: true,
+            darkThemeToggler: true,
+            sourcePath: '/docs',
+            editLinkBase: 'https://github.com/ROF13ThFloor/USTCWdocs',
+            editLinkText: 'این صفحه را در گیت‌هاب ویرایش کنید.',
+            sidebar: [{
+                title: 'اصول و مفاهیم کامپیوتر ',
+                link: '/basic'
+                // make child for each title like this -> 
+                // children: [{
+                //     title: 'معرفی',
+                //     link: '/'
+                // }, {
+                // }]
+            }, {
+                title: 'آشنایی با سخت افزار کامپیوتر',
+                link: '/hardwarebasic'
+            }, {
+                title: 'آشنایی با سیستم عامل ویندوز',
+                link: '/windowsos'
+            }, {
+                title: 'آشنایی مقدماتی با مایکروسافت ورد و پاورپوینت',
+                link: '/wordpowerpoint'
+            }, {
+                title: 'آشنایی مقدماتی با اکسل',
+                lilnk : '/excel'
+            }, {
+                title: 'سرویس های کاربردی',
+                link: '/services'
+            }, {
+                title: 'آشنایی مقدماتی با Git',
+                link: '/git'
+            }, {
+                title: 'آشنایی با شبکه های کامپیوتری',
+                link: '/network'
+            }, {
+                title: 'آشنایی با سیستم عامل لینوکس',
+                link: '/linux'
+            }, {
+                title: 'مقدمات برنامه نویسی وب',
+                link: '/webbasic'
+            },
+            {
+                title: 'مقدمات برنامه نویسی php',
+                link: '/phpbasic'
+            },
+
+            {
+                title: ' آشنایی مقدماتی LaTex',
+                link: '/latex'
+            },
+            
+        
+            ],
+            footer: `
+          <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
+          &copy; ${new Date().getFullYear()}.
+           ساخته شده </a>
+
+            بوسیله‌ی
+            <a href="https://github.com/sadraiiali/docute-fa">داکیوت فارسی</a>
+             </div>
+          `
+        })
+    </script>
+</body>
+
+</html>
