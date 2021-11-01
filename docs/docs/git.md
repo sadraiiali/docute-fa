@@ -234,6 +234,7 @@ sudo yum install git
 <p align="center">
   <img src="../imgs/git/17.jpg">
 </p>
+
 *تصویر ۱۲ - اصلاح*
 
 
