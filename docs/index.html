@@ -11,6 +11,55 @@
             }
         })();
     </script>
+	<style>
+		.meta-base {
+			border: 2px solid #c7c7c761;
+			border-radius: 5px;
+			position: relative;
+		}
+		.meta-base:before {
+			font-weight: 800;
+			font-size: 120%;
+			position: absolute;
+			right: 10px;
+			top: 2px;
+		}
+		.meta-base .title {
+			display: block;
+			font-weight: 600;
+			padding: 4px 10px;
+		}
+		.meta-base p {
+			padding: 0 10px;
+			margin: 8px 0;
+		}
+		.meta-base .title~p {
+			padding-top:10px;
+		}
+		.meta-base p {
+			padding-top:20px;
+		}
+		
+		.warning {
+			background-color: #fffbe8;
+		}
+		.info {
+			background-color: #e8f2ff;
+		}
+		.warning:before {
+			content: "احتیاط!";
+			color: #ddc119;
+		}
+		.info:before {
+			content: "بیشتر بدانید";
+			color: #198cdd;
+		}
+		.warning .title {
+			background-color: #fbec22 !important;
+			color: #3c3509;
+		}
+		
+	</style>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <title>کارگاه کامپیوتر دانشکده ی مهندسی کامپیوتر دانشگاه صنعتی شریف </title>
