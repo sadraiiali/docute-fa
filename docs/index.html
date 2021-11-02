@@ -12,31 +12,31 @@
         })();
     </script>
 	<style>
-		.meta-base {
+		.meta {
 			border: 2px solid #c7c7c761;
 			border-radius: 5px;
 			position: relative;
 		}
-		.meta-base:before {
+		.meta:before {
 			font-weight: 800;
 			font-size: 120%;
 			position: absolute;
 			right: 10px;
 			top: 2px;
 		}
-		.meta-base .title {
+		.meta .title {
 			display: block;
 			font-weight: 600;
 			padding: 4px 10px;
 		}
-		.meta-base p {
+		.meta p {
 			padding: 0 10px;
 			margin: 8px 0;
 		}
-		.meta-base .title~p {
+		.meta .title~p {
 			padding-top:10px;
 		}
-		.meta-base p {
+		.meta p {
 			padding-top:20px;
 		}
 		
@@ -46,6 +46,9 @@
 		.info {
 			background-color: #e8f2ff;
 		}
+		.notice {
+			background-color: #e8ffec;
+		}
 		.warning:before {
 			content: "احتیاط!";
 			color: #ddc119;
@@ -53,6 +56,10 @@
 		.info:before {
 			content: "بیشتر بدانید";
 			color: #198cdd;
+		}
+		.notice:before {
+			content: "نکته";
+			color: #19dd1f;
 		}
 		.warning .title {
 			background-color: #fbec22 !important;
