@@ -12,6 +12,18 @@
         })();
     </script>
 	<style>
+		ol li {
+			list-style: persian;
+		}
+		code {
+			direction: ltr;
+			display: inline-block;
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
+		ol li::marker {
+			color: #eb3636;
+		}
 		.meta {
 			border: 2px solid #c7c7c761;
 			border-radius: 5px;
@@ -41,7 +53,7 @@
 		}
 		
 		.warning {
-			background-color: #fffbe8;
+			background-color: #fff6e8;
 		}
 		.info {
 			background-color: #e8f2ff;
@@ -51,7 +63,7 @@
 		}
 		.warning:before {
 			content: "احتیاط!";
-			color: #ddc119;
+			color: #dda119;
 		}
 		.info:before {
 			content: "بیشتر بدانید";
