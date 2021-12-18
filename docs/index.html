@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <script>
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+	<style>
+		ol li {
+			list-style: persian;
+		}
+		code {
+			direction: ltr;
+			display: inline-block;
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
+		ol li::marker {
+			color: #eb3636;
+		}
+		.meta {
+			border: 2px solid #c7c7c761;
+			border-radius: 5px;
+			position: relative;
+		}
+		.meta:before {
+			font-weight: 800;
+			font-size: 120%;
+			position: absolute;
+			right: 10px;
+			top: 2px;
+		}
+		.meta .title {
+			display: block;
+			font-weight: 600;
+			padding: 4px 10px;
+		}
+		.meta p {
+			padding: 0 10px;
+			margin: 8px 0;
+		}
+		.meta .title~p {
+			padding-top:10px;
+		}
+		.meta p {
+			padding-top:20px;
+		}
+		
+		.warning {
+			background-color: #fff6e8;
+		}
+		.info {
+			background-color: #e8f2ff;
+		}
+		.notice {
+			background-color: #e8ffec;
+		}
+		.warning:before {
+			content: "احتیاط!";
+			color: #dda119;
+		}
+		.info:before {
+			content: "بیشتر بدانید";
+			color: #198cdd;
+		}
+		.notice:before {
+			content: "نکته";
+			color: #19dd1f;
+		}
+		.warning .title {
+			background-color: #fbec22 !important;
+			color: #3c3509;
+		}
+		
+	</style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>کارگاه کامپیوتر دانشکده ی مهندسی کامپیوتر دانشگاه صنعتی شریف </title>
+    <link href="https://unpkg.com/docute-fa@0.1.7/dist/docute.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute-fa@0.1.7/dist/docute.js"></script>
+    <script>
+        new Docute({
+            target: '#docute',
+            title: '🎓 کارگاه کامپیوتر دانشکده ی مهندسی کامپیوتر ',
+            highlight: ['cpp', 'bash', 'c', 'markdown', 'python'],
+            router: {
+                mode: 'history'
+            },
+            detectSystemDarkTheme: true,
+            darkThemeToggler: true,
+            sourcePath: '/docs',
+            editLinkBase: 'https://github.com/ROF13ThFloor/USTCWdocs/tree/master/docs/docs',
+            editLinkText: 'این صفحه را در گیت‌هاب ویرایش کنید.',
+            sidebar: [{
+                title: 'اصول و مفاهیم کامپیوتر ',
+                link: '/basic'
+                // make child for each title like this -> 
+                // children: [{
+                //     title: 'معرفی',
+                //     link: '/'
+                // }, {
+                // }]
+            }, {
+                title: 'آشنایی با سخت افزار کامپیوتر',
+                link: '/hardwarebasic'
+            }, {
+                title: 'آشنایی با سیستم عامل ویندوز',
+                link: '/windowsos'
+            }, {
+                title: 'آشنایی مقدماتی با مایکروسافت ورد و پاورپوینت',
+                link: '/wordpowerpoint'
+            }, {
+                title: 'آشنایی مقدماتی با اکسل',
+                link : '/excel'
+            }, {
+                title: 'سرویس های کاربردی',
+                link: '/services'
+            }, {
+                title: 'آشنایی مقدماتی با Git',
+                link: '/git'
+            }, {
+                title: 'آشنایی با شبکه های کامپیوتری',
+                link: '/network'
+            }, {
+                title: 'آشنایی با سیستم عامل لینوکس',
+                link: '/linux'
+            }, {
+                title: 'مقدمات برنامه نویسی وب',
+                link: '/webbasic'
+            },
+            {
+                title: 'مقدمات برنامه نویسی php',
+                link: '/phpbasic'
+            },
+
+            {
+                title: ' آشنایی مقدماتی LaTex',
+                link: '/latex'
+            },
+            
+        
+            ],
+            footer: `
+          <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
+          &copy; ${new Date().getFullYear()}.
+           ساخته شده </a>
+
+            بوسیله‌ی
+            <a href="https://github.com/sadraiiali/docute-fa">داکیوت فارسی</a>
+             </div>
+          `
+        })
+    </script>
+</body>
+
+</html>
